@@ -364,3 +364,79 @@ button:hover{
     width: 0;
     z-index: 0;
   }
+  .goup1 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+.goup2 {
+    animation: fadein 4s;
+    animation-delay: 2s;
+    animation-duration: 0.7s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari and Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+}
+.goup3 {
+    animation: fadein 2s;
+    animation-delay: 50s;
+    -moz-animation: fadein 6s;
+    /* Firefox */
+    -webkit-animation: fadein 6s;
+    /* Safari and Chrome */
+    -o-animation: fadein 6s;
+    /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
