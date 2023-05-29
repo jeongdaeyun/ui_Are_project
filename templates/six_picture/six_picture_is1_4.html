@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Are-project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/six.css') }}">
+
+</head>
+<body style="height: 100%; overflow: hidden; ;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand description" href="/">탐탐탐</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#projects">탐탐탐, 누구를 위한 서비스인가요?</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <header class="masthead masthead-2">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="image-buttons" style="margin-top: 100px;">
+            <form action="/six" method="POST">
+              <button type="submit" name="image" value="0"> <!-- 이미지 버튼 1 -->
+                  <img src="{{ url_for('static', filename='jeju/jeju_is1/pca_image_hwang/0/cluster_0_0.jpg') }}" width="250" height="250" />
+              </button>
+              <button type="submit" name="image" value="1"> <!-- 이미지 버튼 2 -->
+                  <img src="{{ url_for('static', filename='jeju/jeju_is1/pca_image_hwang/1/cluster_1_0.jpg') }}" width="250" height="250" />
+              </button>
+                <button type="submit" name="image" value="2">
+                  <img src="{{ url_for('static',filename='jeju/jeju_is1/pca_image_hwang/2/cluster_2_4.jpg') }}" width="250" height="250" />
+                </button>
+            </form>
+        </div>
+        <div class="image-buttons">
+            <form action="/six" method="POST">
+              <button type="submit" name="image" value="3">
+                  <img src="{{ url_for('static',filename='jeju/jeju_is1/pca_image_hwang/3/cluster_3_64.jpg') }}" width="250" height="250" />
+              </button>
+              <button type="submit" name="image" value="4">
+                  <img src="{{ url_for('static',filename='jeju/jeju_is1/pca_image_hwang/4/cluster_4_64.jpg') }}" width="250" height="250" />
+              </button>
+                <button type="submit" name="image" value="5">
+                  <img src="{{ url_for('static',filename='jeju/jeju_is1/pca_image_hwang/5/cluster_5_36.jpg') }}" width="250" height="250" />
+                </button>
+            </form>
+        </div>
+    </div>
+  </header>
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Are-project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body style="height: 100%; overflow: hidden; ;">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand description" href="/">탐탐탐</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">탐탐탐, 누구를 위한 서비스인가요?</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead masthead-2">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <h1 style="margin-top: -60px;">원하는 지역을 선택하세요.</h1>
+            <div class="imgdiv" style=" margin-top:20px">
+                <div class="imginsidediv">
+                    <a href="/jeju_is1"><img class="isl isl_1" src="../static/img/섬1_한경면.svg" onclick="onDisplay1()"></a>
+                    <a href="/jeju_is2"><img class="isl isl_2" src="../static/img/섬2_한림읍.svg"></a>
+                    <a href="/jeju_is3"><img class="isl isl_3" src="../static/img/섬3_애월읍.svg"></a>
+                    <a href="/jeju_is4"><img class="isl isl_4" src="../static/img/섬4_제주시.svg"></a>
+                    <a href="/jeju_is5"><img class="isl isl_5" src="../static/img/섬5_조천읍.svg"></a>
+                    <a href="/jeju_is6"><img class="isl isl_6" src="../static/img/섬6_구좌읍.svg"></a>
+                    <a href="/jeju_is7"><img class="isl isl_7" src="../static/img/섬7_대정읍.svg"></a>
+                    <a href="/jeju_is8"><img class="isl isl_8" src="../static/img/섬8_안덕면.svg"></a>
+                    <a href="/jeju_is9"><img class="isl isl_9" src="../static/img/섬9_서귀포시.svg"></a>
+                    <a href="/jeju_is10"><img class="isl isl_10" src="../static/img/섬10_남원읍.svg"></a>
+                    <a href="/jeju_is11"><img class="isl isl_11" src="../static/img/섬11_표선면.svg"></a>
+                    <a href="/jeju_is12"><img class="isl isl_12" src="../static/img/섬12_성신읍.svg"></a>
+                </div>
+                <div class="ml-5" style="margin-top: -90px;">
+                    <img src="{{ url_for('static', filename='img/island-removebg-preview.png') }}" width="720" height="600"/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="col-md-5 isl_div" id="isl_div1" style="margin-left: 350px;">
+        <a class="btn fw-bold m-3 tourbtn" href="/six_is8_1">루나폴</a>
+        <a class="btn fw-bold m-3 tourbtn" href="/six_is8_2">용머리해안</a>
+        <a class="btn fw-bold m-3 tourbtn" href="/six_is8_3">카멜리아힐</a>
+        <a class="btn fw-bold m-3 tourbtn" href="/six_is8_4">신화테마파크</a>
+    </div>
+
+</body>
+    <!-- 페이지 이동 js -->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        function onDisplay1() { $('#isl_div1').show();}
+    // jQuery(document).ready(function(){
+    // $('h1').mousemove(function(e){
+    //     var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);
+    //     var rYP = (e.pageY - this.offsetTop+$(this).height()/2);
+    //     $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+    //     });
+    // });
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Are-project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body style="height: 100%; overflow: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand description" href="/">탐탐탐</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">탐탐탐, 누구를 위한 서비스인가요?</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead masthead-2">
+        <div class="container px-4 px-lg-5 d-flex flex-column align-items-center justify-content-center">
+            <div class="image" style="margin-top: 15%;">
+                <div class="row">
+                    <div class="col">
+                        <img src="{{ url_for('static',filename='save/original.jpg') }}" width="250" height="250" />
+                    </div>
+                    <div class="col">
+                        <img src="{{ url_for('static',filename='save/captured.jpg') }}" width="250" height="250" />
+                    </div>
+                </div>
+            </div>
+            <div class="text mt-4">
+                <a href="/jeju" class="text-link"><strong>재촬영</strong></a>
+                <a href="/result" class="text-link"><strong>촬영종료</strong></a>
+            </div>
+        </div>
+        
+    </header>
+</body>
+</html>
