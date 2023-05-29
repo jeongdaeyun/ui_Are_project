@@ -13,14 +13,21 @@
             <a class="navbar-brand description" href="/">탐탐탐</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">탐탐탐, 누구를 위한 서비스인가요?</a></li>
+                    <li class="nav-item"><p class="nav-link" onmouseover="bigImg(this)" onmouseout="normalImg(this)">탐탐탐, 누구를 위한 서비스인가요?</p></li>
                 </ul>
+                <p class="task-tooltip">관광지에서 찍은 사진을 돌려보며 마음에 안 드셨던 분들을 위한.</p>
             </div>
         </div>
     </nav>
     <header class="masthead masthead-2">
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <h1 style="margin-top: -60px;">원하는 지역을 선택하세요.</h1>
+            <h1>원하는 장소를 선택하세요.</h1>
+            <div class="col-md-5 isl_div" id="isl_div1">
+                <a class="btn fw-bold m-3 tourbtn" href="/six_is5_1">새미동산</a>
+                <a class="btn fw-bold m-3 tourbtn" href="/six_is5_2">함덕해수욕장</a>
+                <a class="btn fw-bold m-3 tourbtn" href="/six_is5_3">거문오름</a>
+                <a class="btn fw-bold m-3 tourbtn" href="/six_is5_4">선녀와나무꾼테마공원</a>
+            </div>
             <div class="imgdiv" style=" margin-top:20px">
                 <div class="imginsidediv">
                     <a href="/jeju_is1"><img class="isl isl_1" src="../static/img/섬1_한경면.svg" onclick="onDisplay1()"></a>
@@ -36,18 +43,12 @@
                     <a href="/jeju_is11"><img class="isl isl_11" src="../static/img/섬11_표선면.svg"></a>
                     <a href="/jeju_is12"><img class="isl isl_12" src="../static/img/섬12_성신읍.svg"></a>
                 </div>
-                <div class="ml-5" style="margin-top: -90px;">
+                <!-- <div class="ml-5" style="margin-top: -90px;">
                     <img src="{{ url_for('static', filename='img/island-removebg-preview.png') }}" width="720" height="600"/>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
-    <div class="col-md-5 isl_div" id="isl_div1" style="margin-left: 350px;">
-        <a class="btn fw-bold m-3 tourbtn" href="/six_is5_1">새미동산</a>
-        <a class="btn fw-bold m-3 tourbtn" href="/six_is5_2">함덕해수욕장</a>
-        <a class="btn fw-bold m-3 tourbtn" href="/six_is5_3">거문오름</a>
-        <a class="btn fw-bold m-3 tourbtn" href="/six_is5_4">선녀와나무꾼테마공원</a>
-    </div>
 
 </body>
     <!-- 페이지 이동 js -->
@@ -55,6 +56,13 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         function onDisplay1() { $('#isl_div1').show();}
+        function bigImg(x) {
+            $('.task-tooltip').show();
+        }
+
+        function normalImg(x) {
+            $('.task-tooltip').hide();
+        } 
     // jQuery(document).ready(function(){
     // $('h1').mousemove(function(e){
     //     var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);

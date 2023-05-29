@@ -2,7 +2,7 @@
 from __future__ import absolute_import, division, print_function
 
 import click
-import cv2
+#import cv2
 import matplotlib
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
@@ -10,11 +10,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from omegaconf import OmegaConf
+#from omegaconf import OmegaConf
 from PIL import Image
 
 from libs.models import *
-from libs.utils import DenseCRF
+#from libs.utils import DenseCRF
 
 from glob import glob
 from PIL import Image
