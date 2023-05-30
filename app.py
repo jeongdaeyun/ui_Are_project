@@ -4,8 +4,8 @@ from flask import url_for, flash, redirect, session
 from werkzeug.utils import secure_filename
 from flask import make_response
 import pickle
-from flask_socketio import SocketIO
-import cv2
+#from flask_socketio import SocketIO
+#import cv2
 import tkinter as tk
 from PIL import ImageTk, Image
 import os

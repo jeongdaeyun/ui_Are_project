@@ -1,0 +1,442 @@
+
+.not-visible {
+    visibility: hidden;
+}
+.span-title{
+    width: 90px;
+    height:30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900!important;
+    font-size: 15px;
+    line-height: 22px;  
+    color: #272D37;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.span-title:focus{
+    border: none;
+    box-shadow: none;
+}
+/* .px-3 p{
+    text-transform: capitalize;
+    font-size: 33px;
+    white-space: nowrap;
+    color: #212529;
+    margin: 0;
+    position: absolute;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family:'Noto Sans KR', sans-serif !important;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.px-3 p::before{
+    content: "여기 Skip 할 수 없는 광고가 있습니다.  ";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: typing 5s steps(33) infinite;
+}
+@keyframes typing{
+    0% {
+        width: 20%;
+    }
+    95%{
+        width:100%;
+    }
+}
+.px-3 h1{
+    text-transform: capitalize;
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.transitions{
+    background: #212529;
+    position: relative;
+    animation: fade 4s forwards;
+    }
+    @keyframes fade {
+    0% {
+        opacity:0.3;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity:1;
+    }
+    }
+h1{
+    text-transform:uppercase;
+} */
+/* .px-3 h1::before{
+    content: " P I K S ";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 165, 0);
+    overflow: hidden;
+    animation: typing2 4s steps(30);
+}
+@keyframes typing2{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width:100%;
+    }
+} */
+#buttton:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: none;
+}
+.btn:focus{
+    border: none;
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+body{
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'NanumSquare';
+    line-height: 3.2em;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+.logo-title{
+    color: black;
+}
+.logoimg1{
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../img/logo1.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+.logoimg2{
+    background-position: left;
+    height:25px;
+    background-image: url("../img/logo2.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+.islandimg{
+    position: absolute;
+    width: 716.96px;
+    height: 320px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 520px;
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.description{
+    font-family: 'NanumSquare';
+    font-style: normal;
+}
+.imgdiv{
+    position: absolute;
+    width: 716.96px;
+    height: 224.8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.imginsidediv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.isl_1{
+    position: absolute;
+    left: 0px;
+    top: 78.56px;
+}
+.isl_2{
+    position: absolute;
+    left: 111.38px;
+    top: 49.73px;
+}
+.isl_3{
+    position: absolute;
+    top: 30.73px;
+    left: 219.48px;
+}
+.isl_4{
+    position: absolute;
+    top: 14.36px;
+    left: 326.93px;
+}
+.isl_5{
+    position: absolute;
+    top: 3.87px;
+    left: 418.66px;
+}
+.isl_6{
+    position: absolute;
+    top: 0px;
+    left: 508.12px;
+}
+.isl_7{
+    position: absolute;
+    top: 143px;
+    left: 41.34px;
+}
+.isl_8{
+    position: absolute;
+    top: 133.6px;
+    left: 137.59px;
+}
+.isl_9{
+    position: absolute;
+    top: 120px;
+    left: 241.34px;
+}
+.isl_10{
+    position: absolute;
+    top: 90px;
+    left: 367.34px;
+}
+.isl_11{
+    position: absolute;
+    top: 68px;
+    left: 463.34px;
+}
+.isl_12{
+    position:absolute;
+    top: 50px;
+    left: 553.34px;
+}
+.isl:hover {
+    cursor: pointer;
+    filter: opacity(1) drop-shadow(0 0 0 #51ff00);;
+    transition: 0.4s;
+    transform: translateY(-4px);
+}
+.isl_div{
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    margin-top: 700px;
+    width: 80%;
+}
+.tourbtn{
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    color: white;
+    background:#4e7fb0f1;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.272) !important;
+}
+.tourbtn:hover{
+    cursor: pointer;
+    background: #507fad;
+    transition: 0.1s;
+    box-shadow: 0px 15px 20px  #77b2ee59 !important;
+    color: #fff;
+    transform: translateY(-4px);
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.masthead h1, .masthead .h1 {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 4rem;
+    line-height: 6.5rem;
+    letter-spacing: 0rem;
+    font-weight: 900;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.664);
+}
+
+.masthead-1 {
+    background-image: url(../img/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.masthead-2 {
+    background-image: url(../img/bg-masthead-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-section {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.8) 80%), url(../img/bg-2.jpg);
+}
+.btn-mant {
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+}
+.masthead-2 h1, .masthead-2 .h1 {
+    position: fixed;
+    top: 170px;
+    -webkit-text-fill-color: transparent;
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.selectimg{
+    width: 100%;
+    font-family: 'NanumSquare', sans-serif;
+    margin-top: 100px;
+    font-size: 2rem;
+    line-height: 0.5rem;
+    letter-spacing: 0rem;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.664);
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+    background: #507fad;
+    transition: 0.1s;
+    box-shadow: 0px 15px 20px  #b3b3b322 !important;
+    color: #fff;
+    transform: translateY(-7px);
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.task-tooltip {
+    font-family: 'NanumSquare', sans-serif;
+    display: none;
+    background-color: #eef3fda6;
+    border: #32323239 solid 1px;
+    border-radius: 1rem;
+    color: #434343;
+    font-size: 10px;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: -0.45px;
+    margin-top: 6.8px;
+    padding: 7px 7px;
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    width: fit-content;
+    z-index: 100;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    line-height: 1rem;
+  }
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+  .task-tooltip::after {
+    font-family: 'NanumSquare', sans-serif;
+    border-color: #eef3fd transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 75px;
+    position: absolute;
+    top: -7px;
+    width: 0;
+    z-index: 1;
+  }
+  
+  .task-tooltip::before {
+    border-color: #7689fd transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 75px;
+    position: absolute;
+    top: -8px;
+    width: 0;
+    z-index: 0;
+  }
+  .goup1 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+.goup2 {
+    animation: fadein 4s;
+    animation-delay: 2s;
+    animation-duration: 0.7s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari and Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+}
+.goup3 {
+    animation: fadein 2s;
+    animation-delay: 50s;
+    -moz-animation: fadein 6s;
+    /* Firefox */
+    -webkit-animation: fadein 6s;
+    /* Safari and Chrome */
+    -o-animation: fadein 6s;
+    /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

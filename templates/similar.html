@@ -12,8 +12,10 @@
             <a class="navbar-brand description" href="/">탐탐탐</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">탐탐탐, 누구를 위한 서비스인가요?</a></li>
+                    <li class="nav-item"><p class="nav-link" onmouseover="bigImg(this)" onmouseout="normalImg(this)">탐탐탐, 누구를 위한 서비스인가요?</p></li>
                 </ul>
+                <p class="task-tooltip"> 탐탐탐은 어디서 찍어야 인생샷이 나올까? 하는 고민을 해 본 적 있는 분들을 위해
+                    <br> 관광 명소 별 최적의 사진 촬영 구도 추천해주는 서비스입니다.</p>
             </div>
         </div>
     </nav>
@@ -38,4 +40,14 @@
         
     </header>
 </body>
+<script>
+    function onDisplay1() { $('#isl_div1').show();}
+    function bigImg(x) {
+        $('.task-tooltip').show();
+    }
+
+    function normalImg(x) {
+        $('.task-tooltip').hide();
+    } 
+</script>
 </html>
